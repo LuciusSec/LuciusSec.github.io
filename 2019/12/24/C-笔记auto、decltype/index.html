@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | 刘驰的博客</title>
+  <title>C++笔记auto、decltype | 刘驰的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="恶意代码">
+  <meta name="description" content="auto类型说明符12auto i = 0, *p = &amp;amp;i;auto sz = 0, pi = 3.14 //类型不一致  const与auto12int i = 0, &amp;amp;r = i;auto a = r;   auto一般会忽略掉顶层const 12345const int ci = i, &amp;amp;cr =ci;auto b = ci;auto c = cr;auto d =">
+<meta name="keywords" content="C++">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/07/01/hello-world/index.html">
+<meta property="og:title" content="C++笔记auto、decltype">
+<meta property="og:url" content="http://yoursite.com/2019/12/24/C-笔记auto、decltype/index.html">
 <meta property="og:site_name" content="刘驰的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="auto类型说明符12auto i = 0, *p = &amp;amp;i;auto sz = 0, pi = 3.14 //类型不一致  const与auto12int i = 0, &amp;amp;r = i;auto a = r;   auto一般会忽略掉顶层const 12345const int ci = i, &amp;amp;cr =ci;auto b = ci;auto c = cr;auto d =">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-01T16:10:23.704Z">
+<meta property="og:updated_time" content="2019-12-24T13:41:51.122Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="C++笔记auto、decltype">
+<meta name="twitter:description" content="auto类型说明符12auto i = 0, *p = &amp;amp;i;auto sz = 0, pi = 3.14 //类型不一致  const与auto12int i = 0, &amp;amp;r = i;auto a = r;   auto一般会忽略掉顶层const 12345const int ci = i, &amp;amp;cr =ci;auto b = ci;auto c = cr;auto d =">
   
     <link rel="alternative" href="/atom.xml" title="刘驰的博客" type="application/atom+xml">
   
@@ -163,39 +163,39 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-C-笔记auto、decltype" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      C++笔记auto、decltype
     </h1>
   
 
         
-        <a href="/2019/07/01/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-01T11:38:43.223Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-01</time>
+        <a href="/2019/12/24/C-笔记auto、decltype/" class="archive-article-date">
+  	<time datetime="2019-12-24T13:08:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h2 id="auto类型说明符"><a href="#auto类型说明符" class="headerlink" title="auto类型说明符"></a>auto类型说明符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">auto i = 0, *p = &amp;i;</span><br><span class="line">auto sz = 0, pi = 3.14 //类型不一致</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="const与auto"><a href="#const与auto" class="headerlink" title="const与auto"></a>const与auto</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int i = 0, &amp;r = i;</span><br><span class="line">auto a = r;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>auto一般会忽略掉顶层const</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const int ci = i, &amp;cr =ci;</span><br><span class="line">auto b = ci;</span><br><span class="line">auto c = cr;</span><br><span class="line">auto d = &amp;i;</span><br><span class="line">auto e = &amp;ci; //e是指向整数常量的指针</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置一个类型为auto的引用时初始值的顶层常量属性保留</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">auto &amp;g = ci; //g是整型常量的引用</span><br><span class="line">auto &amp;h = 42; //错误，不能为非常量引用绑定字面值</span><br><span class="line">const auto &amp;j = 42;  //正确</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+</li>
+</ul>
 
       
 
@@ -230,7 +230,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">恶意代码</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
         		</li>
       		
 		</ul>
@@ -286,7 +286,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/01/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/24/C-笔记auto、decltype/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -300,15 +300,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/12/24/C-笔记auto、decltype/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          C++笔记auto、decltype
-        
-      </div>
-    </a>
   
+    <a href="/2019/07/01/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
