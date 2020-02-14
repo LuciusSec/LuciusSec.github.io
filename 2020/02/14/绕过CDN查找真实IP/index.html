@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>绕过CDN查找真实IP | 刘驰的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="phpinfo 子域名 国外访问 https://asm.ca.com/en/ping.php 域名解析记录https://netcraft.com,https://toolbar.netcraft.com 绕过cloudfire，使用网站cloudfirewatch http://crimeflare.us/cfs.html#box">
+  <meta name="description" content="(1)查询子域名：毕竟 CDN 还是不便宜的，所以很多站长可能只会对主站或者流量大的子站点做了 CDN，而很多小站子站点又跟主站在同一台服务器或者同一个C段内，此时就可以通过查询子域名对应的 IP 来辅助查找网站的真实IP。传送门——&amp;gt; 子域名信息查询 (2)查询主域名：以前用CDN的时候有个习惯，只让WWW域名使用cdn，秃域名不适用，为的是在维护网站时更方便，不用等cdn缓存。所以试着把">
 <meta name="keywords" content="web安全">
 <meta property="og:type" content="article">
 <meta property="og:title" content="绕过CDN查找真实IP">
 <meta property="og:url" content="http://yoursite.com/2020/02/14/绕过CDN查找真实IP/index.html">
 <meta property="og:site_name" content="刘驰的博客">
-<meta property="og:description" content="phpinfo 子域名 国外访问 https://asm.ca.com/en/ping.php 域名解析记录https://netcraft.com,https://toolbar.netcraft.com 绕过cloudfire，使用网站cloudfirewatch http://crimeflare.us/cfs.html#box">
+<meta property="og:description" content="(1)查询子域名：毕竟 CDN 还是不便宜的，所以很多站长可能只会对主站或者流量大的子站点做了 CDN，而很多小站子站点又跟主站在同一台服务器或者同一个C段内，此时就可以通过查询子域名对应的 IP 来辅助查找网站的真实IP。传送门——&amp;gt; 子域名信息查询 (2)查询主域名：以前用CDN的时候有个习惯，只让WWW域名使用cdn，秃域名不适用，为的是在维护网站时更方便，不用等cdn缓存。所以试着把">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2020-02-13T17:27:47.840Z">
+<meta property="og:updated_time" content="2020-02-14T03:49:50.177Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="绕过CDN查找真实IP">
-<meta name="twitter:description" content="phpinfo 子域名 国外访问 https://asm.ca.com/en/ping.php 域名解析记录https://netcraft.com,https://toolbar.netcraft.com 绕过cloudfire，使用网站cloudfirewatch http://crimeflare.us/cfs.html#box">
+<meta name="twitter:description" content="(1)查询子域名：毕竟 CDN 还是不便宜的，所以很多站长可能只会对主站或者流量大的子站点做了 CDN，而很多小站子站点又跟主站在同一台服务器或者同一个C段内，此时就可以通过查询子域名对应的 IP 来辅助查找网站的真实IP。传送门——&amp;gt; 子域名信息查询 (2)查询主域名：以前用CDN的时候有个习惯，只让WWW域名使用cdn，秃域名不适用，为的是在维护网站时更方便，不用等cdn缓存。所以试着把">
   
     <link rel="alternative" href="/atom.xml" title="刘驰的博客" type="application/atom+xml">
   
@@ -183,13 +183,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li>phpinfo</li>
-<li>子域名</li>
-<li>国外访问 <a href="https://asm.ca.com/en/ping.php" target="_blank" rel="noopener">https://asm.ca.com/en/ping.php</a></li>
-<li>域名解析记录<a href="https://netcraft.com,https://toolbar.netcraft.com" target="_blank" rel="noopener">https://netcraft.com,https://toolbar.netcraft.com</a></li>
-<li>绕过cloudfire，使用网站cloudfirewatch <a href="http://crimeflare.us/cfs.html#box" target="_blank" rel="noopener">http://crimeflare.us/cfs.html#box</a></li>
-</ol>
+        <p>(1)查询子域名：毕竟 CDN 还是不便宜的，所以很多站长可能只会对主站或者流量大的子站点做了 CDN，而很多小站子站点又跟主站在同一台服务器或者同一个C段内，此时就可以通过查询子域名对应的 IP 来辅助查找网站的真实IP。传送门——&gt; 子域名信息查询</p>
+<p>(2)查询主域名：以前用CDN的时候有个习惯，只让WWW域名使用cdn，秃域名不适用，为的是在维护网站时更方便，不用等cdn缓存。所以试着把目标网站的www去掉，ping一下看ip是不是变了，您别说，这个方法还真是屡用不爽。</p>
+<p>(3)邮件服务器：一般的邮件系统都在内部，没有经过CDN的解析，通过目标网站用户注册或者RSS订阅功能，查看邮件，寻找邮件头中的邮件服务器域名IP，ping这个邮件服务器的域名，就可以获得目标的真实IP(必须是目标自己的邮件服务器，第三方或者公共邮件服务器是没有用的)。</p>
+<p>(4)查看域名历史解析记录：也许目标很久之前没有使用CDN，所以可能会存在使用 CDN 前的记录。所以可以通过网站<a href="https://www.netcraft.com" target="_blank" rel="noopener">https://www.netcraft.com</a> 来观察域名的IP历史记录。</p>
+<p>(5)国外访问：国内的CDN往往只对国内用户的访问加速，而国外的CDN就不一定了。因此，通过国外在线代理网站<a href="https://asm.ca.com/en/ping.php" target="_blank" rel="noopener">https://asm.ca.com/en/ping.php</a> 访问 ，可能会得到真实的ip地址。</p>
+<p>(6)Nslookup查询：查询域名的NS记录、MX记录、TXT记录等很有可能指向的是真实ip或同C段服务器。传送门：各种解析记录</p>
+<p>(7)网站漏洞：利用网站自身存在的漏洞，很多情况下会泄露服务器的真实IP地址</p>
+<p>(8)Censys查询SSL证书找到真实IP：利用“Censys网络空间搜索引擎”搜索网站的SSL证书及HASH，在<a href="https://crt.sh上查找目标网站SSL证书的HASH，然后再用Censys搜索该HASH即可得到真实IP地址" target="_blank" rel="noopener">https://crt.sh上查找目标网站SSL证书的HASH，然后再用Censys搜索该HASH即可得到真实IP地址</a></p>
 
       
 
@@ -422,15 +423,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">恶意代码</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">web安全</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">C++</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">恶意代码</a>
               </li>
             
             <div class="clearfix"></div>
