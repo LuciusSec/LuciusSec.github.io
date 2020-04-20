@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Python 学习笔记-列表(1) | 刘驰的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python 学习笔记-列表(1)1234567891011121314151617181920212223242526272829303132333435363738#! /usr/bin/env python# -*- coding: utf-8 -*-colors = [&amp;apos;red&amp;apos;,&amp;apos;black&amp;apos;,&amp;apos;green&amp;apos;]#添加元素colo">
+  <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738#! /usr/bin/env python# -*- coding: utf-8 -*-colors = [&amp;apos;red&amp;apos;,&amp;apos;black&amp;apos;,&amp;apos;green&amp;apos;]#添加元素colors.append(&amp;apos;b">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python 学习笔记-列表(1)">
 <meta property="og:url" content="http://yoursite.com/2020/04/20/Python-学习笔记-列表-1/index.html">
 <meta property="og:site_name" content="刘驰的博客">
-<meta property="og:description" content="Python 学习笔记-列表(1)1234567891011121314151617181920212223242526272829303132333435363738#! /usr/bin/env python# -*- coding: utf-8 -*-colors = [&amp;apos;red&amp;apos;,&amp;apos;black&amp;apos;,&amp;apos;green&amp;apos;]#添加元素colo">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738#! /usr/bin/env python# -*- coding: utf-8 -*-colors = [&amp;apos;red&amp;apos;,&amp;apos;black&amp;apos;,&amp;apos;green&amp;apos;]#添加元素colors.append(&amp;apos;b">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2020-04-20T05:47:05.875Z">
+<meta property="og:updated_time" content="2020-04-20T05:50:14.688Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python 学习笔记-列表(1)">
-<meta name="twitter:description" content="Python 学习笔记-列表(1)1234567891011121314151617181920212223242526272829303132333435363738#! /usr/bin/env python# -*- coding: utf-8 -*-colors = [&amp;apos;red&amp;apos;,&amp;apos;black&amp;apos;,&amp;apos;green&amp;apos;]#添加元素colo">
+<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738#! /usr/bin/env python# -*- coding: utf-8 -*-colors = [&amp;apos;red&amp;apos;,&amp;apos;black&amp;apos;,&amp;apos;green&amp;apos;]#添加元素colors.append(&amp;apos;b">
   
     <link rel="alternative" href="/atom.xml" title="刘驰的博客" type="application/atom+xml">
   
@@ -182,7 +182,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Python-学习笔记-列表-1"><a href="#Python-学习笔记-列表-1" class="headerlink" title="Python 学习笔记-列表(1)"></a>Python 学习笔记-列表(1)</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">#! /usr/bin/env python</span><br><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line">colors = [&apos;red&apos;,&apos;black&apos;,&apos;green&apos;]</span><br><span class="line"></span><br><span class="line">#添加元素</span><br><span class="line">colors.append(&apos;blue&apos;)</span><br><span class="line">print(colors)</span><br><span class="line"></span><br><span class="line">#插入元素到指定位置</span><br><span class="line">colors.insert(1,&apos;pink&apos;)</span><br><span class="line">print(colors)</span><br><span class="line"></span><br><span class="line">#使用pop删除元素</span><br><span class="line">pop_color = colors.pop()</span><br><span class="line">print(colors)</span><br><span class="line">print(pop_color)</span><br><span class="line"></span><br><span class="line">#弹出任何位置元素</span><br><span class="line">pop_color = colors.pop(1)</span><br><span class="line">print(colors)</span><br><span class="line">print(pop_color)</span><br><span class="line"></span><br><span class="line">#根据值删除元素</span><br><span class="line">colors.remove(&apos;black&apos;)</span><br><span class="line">print(colors)</span><br><span class="line"></span><br><span class="line">#组织列表</span><br><span class="line">#使用sort对列表排序</span><br><span class="line">cars = [&apos;bmw&apos;,&apos;audi&apos;,&apos;ford&apos;,&apos;toyota&apos;]</span><br><span class="line">print(sorted(cars))</span><br><span class="line">print(cars)</span><br><span class="line">cars.sort()</span><br><span class="line">print(cars)</span><br><span class="line">cars.sort(reverse=True)</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">#列表长度</span><br><span class="line">print(len(cars))</span><br></pre></td></tr></table></figure>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">#! /usr/bin/env python</span><br><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line">colors = [&apos;red&apos;,&apos;black&apos;,&apos;green&apos;]</span><br><span class="line"></span><br><span class="line">#添加元素</span><br><span class="line">colors.append(&apos;blue&apos;)</span><br><span class="line">print(colors)</span><br><span class="line"></span><br><span class="line">#插入元素到指定位置</span><br><span class="line">colors.insert(1,&apos;pink&apos;)</span><br><span class="line">print(colors)</span><br><span class="line"></span><br><span class="line">#使用pop删除元素</span><br><span class="line">pop_color = colors.pop()</span><br><span class="line">print(colors)</span><br><span class="line">print(pop_color)</span><br><span class="line"></span><br><span class="line">#弹出任何位置元素</span><br><span class="line">pop_color = colors.pop(1)</span><br><span class="line">print(colors)</span><br><span class="line">print(pop_color)</span><br><span class="line"></span><br><span class="line">#根据值删除元素</span><br><span class="line">colors.remove(&apos;black&apos;)</span><br><span class="line">print(colors)</span><br><span class="line"></span><br><span class="line">#组织列表</span><br><span class="line">#使用sort对列表排序</span><br><span class="line">cars = [&apos;bmw&apos;,&apos;audi&apos;,&apos;ford&apos;,&apos;toyota&apos;]</span><br><span class="line">print(sorted(cars))</span><br><span class="line">print(cars)</span><br><span class="line">cars.sort()</span><br><span class="line">print(cars)</span><br><span class="line">cars.sort(reverse=True)</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">#列表长度</span><br><span class="line">print(len(cars))</span><br></pre></td></tr></table></figure>
       
 
       
@@ -403,7 +403,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+                <a href="javascript:void(0)" class="js-tag color4">C++</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -411,11 +411,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">web安全</a>
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">C++</a>
+                <a href="javascript:void(0)" class="js-tag color1">web安全</a>
               </li>
             
             <div class="clearfix"></div>
